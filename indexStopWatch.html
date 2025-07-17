@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+ <style>
+      body {
+        background-color: #adb8c4;
+      }
+
+        h1 {
+            font-size: 55px;
+            text-align: center;
+            padding-top: 60px;
+        }
+      .display_div {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px;
+        letter-spacing: 5px;
+        font-size: 45px;
+      }
+      button {
+        padding: 20px 40px;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        background-color: rgb(92, 91, 91);
+        border: none;
+        color: rgb(245, 239, 239);
+        
+      }
+      .button_div {
+        text-align: center;
+      }
+      
+      @media (max-width: 768px) {
+        h1{
+            font-size: 45px;
+            
+            padding-top: 50px;
+        }
+
+        .display_div {
+          font-size: 40px;
+        }
+
+        button {
+        padding: 15px 35px;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        background-color: rgb(92, 91, 91);
+        border: none;
+        color: rgb(245, 239, 239);
+        
+      }
+      }
+    </style>
+<body>
+    <h1>⏱ Stop Watch</h1>
+ <div id="display" class="display_div">00:00:00</div>
+ <div class="button_div">
+  <button onclick="start()">Start</button>
+  <button onclick="stop()">Stop</button>
+  <button onclick="reset()">Reset</button>
+ </div>
+ 
+
+    <script src="./appStopWatch.js"></script>
+</body>
+</html>
